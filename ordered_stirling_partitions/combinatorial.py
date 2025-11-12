@@ -13,3 +13,6 @@ def combinatorial_info():
 
 if __name__ == "__main__":
     print(combinatorial_info())
+
+def unrank_ordered_stirling_partition(n,k,r):
+    pass 
