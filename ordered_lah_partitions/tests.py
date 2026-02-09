@@ -1,6 +1,17 @@
 """Smoke tests for ordered_lah_partitions."""
 
-from . import combinatorial, lexicographic
+from pathlib import Path
+import sys
+
+THIS_DIR = Path(__file__).resolve().parent
+ROOT_DIR = THIS_DIR.parent
+if str(THIS_DIR) not in sys.path:
+    sys.path.insert(0, str(THIS_DIR))
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+import combinatorial
+import lexicographic
 
 
 def run():
@@ -17,3 +28,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+

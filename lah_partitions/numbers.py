@@ -21,3 +21,4 @@ def count_lah_part(n,k):
     if k>n or n < 0: 
         return 0 
     return count_lah_part(n-1,k-1)+(n-1+k)*count_lah_part(n-1,k)
+

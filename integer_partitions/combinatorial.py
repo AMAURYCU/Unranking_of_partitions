@@ -4,15 +4,22 @@
 Utilities for combinatorial helpers for unranking algorithms.
 """
 
-from  numbers import count_integer_part
 
-def combinatorial_info():
-    """Return a short description."""
-    return "combinatorial module placeholder"
+from pathlib import Path
+import sys
+
+THIS_DIR = Path(__file__).resolve().parent
+ROOT_DIR = THIS_DIR.parent
+if str(THIS_DIR) not in sys.path:
+    sys.path.insert(0, str(THIS_DIR))
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from values import count_integer_part
 
 
-if __name__ == "__main__":
-    print(combinatorial_info())
+
+
 
 
 def unrank_integer_part(n,k,r):
