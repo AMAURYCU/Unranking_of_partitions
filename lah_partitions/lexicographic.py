@@ -4,16 +4,7 @@
 Utilities for lexicographic ordering helpers for unranking algorithms.
 """
 
-from  numbers import count_lah_part as lah
-
-def lexicographic_info():
-    """Return a short description."""
-    return "lexicographic module placeholder"
-
-
-if __name__ == "__main__":
-    print(lexicographic_info())
-
+from  values import count_lah_part as lah
 
 def extract(block,dispo):
     ret = []
@@ -31,7 +22,7 @@ def extract_part(part,dispo):
 
 
 
-def block_lex_unrank_efficient2(n,k,r):
+def block_lex_unrank(n,k,r):
     block = []
     size = 1
     contains1 = False 
@@ -65,12 +56,12 @@ def block_lex_unrank_efficient2(n,k,r):
             size += 1
             s_up = lah(n-(size-1),k)- (n-size)*lah(n-size,k)
           
-def unrank_lah_lex_eff2(n,k,r):
+def unrank_lah_lex(n,k,r):
     part = []
     size = n 
     nb_block = k
     for l in range(k):
-        block, r = block_lex_unrank_efficient2(size,nb_block,r)
+        block, r = block_lex_unrank(size,nb_block,r)
         part.append(block)
         size -= len(block)
         nb_block -= 1

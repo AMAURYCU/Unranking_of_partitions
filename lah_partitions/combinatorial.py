@@ -4,7 +4,7 @@
 Utilities for combinatorial helpers for unranking algorithms.
 """
 
-from  numbers import count_lah_part
+from  values import count_lah_part
 
 def combinatorial_info():
     """Return a short description."""
