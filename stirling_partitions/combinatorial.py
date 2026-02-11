@@ -4,7 +4,7 @@
 Utilities for combinatorial helpers for unranking algorithms.
 """
 
-from .numbers import stirling
+from values import s2 as stirling 
 
 def combinatorial_info():
     """Return a short description."""

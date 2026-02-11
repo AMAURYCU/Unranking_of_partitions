@@ -17,6 +17,7 @@ def is_well_formed(p,n):
     Check if all block of p is a strictly increasing sequence of integers each between 1 and n
     Check if the blocks of p are disjoint and their union is [|n|]
     Check if none of the block of p is empty 
+
     """
     dispo = set(range(1,n+1))
     for block in p:
