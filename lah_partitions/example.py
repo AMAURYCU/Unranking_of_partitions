@@ -1,4 +1,4 @@
-"""Exemple d'utilisation pour lah_partitions."""
+
 
 import combinatorial, lexicographic, values, random
 def exhaust_gen_lex(n,k):

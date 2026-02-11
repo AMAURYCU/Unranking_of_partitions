@@ -1,4 +1,4 @@
-"""Smoke tests for stirling_partitions."""
+
 
 from pathlib import Path
 import sys

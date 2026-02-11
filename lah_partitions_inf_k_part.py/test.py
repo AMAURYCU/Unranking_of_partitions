@@ -1,5 +1,3 @@
-
-
 from pathlib import Path
 import sys
 
@@ -10,7 +8,7 @@ if str(THIS_DIR) not in sys.path:
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-import combinatorial
+
 import lexicographic
 import values
 import lex_order
@@ -48,12 +46,12 @@ def correction(n,k, verbose = True):
     """
    check that the unranking algorithm produces well formed lah partitions and all the lah partitions of [|n|] with k blocks are produced.
     """
-    old = lexicographic.unrank_lah_lex(n,k,0)
-    for r in range(1,values.count_lah_part(n,k)):
+    old = lexicographic.unrank_lex(n,k,0)
+    for r in range(1,values.count_lah_part_inf_k(n,k)):
          if verbose: 
               if r % 1000 == 0:
-                    print("r =", r,"/", values.count_lah_part(n,k))
-         part = lexicographic.unrank_lah_lex(n,k,r)
+                    print("r =", r,"/", values.count_lah_part_inf_k(n,k))
+         part = lexicographic.unrank_lex(n,k,r)
          if not well_formed(n,part):
                 print("Error at n =", n, "k =", k, "r =", r)
                 print("part =", part)

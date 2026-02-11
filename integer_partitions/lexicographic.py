@@ -1,8 +1,4 @@
-# Auto-generated placeholder
-"""lexicographic module (placeholder)
 
-Utilities for lexicographic ordering helpers for unranking algorithms.
-"""
 
 
 from pathlib import Path

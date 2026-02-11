@@ -1,4 +1,4 @@
-"""Smoke tests for integer_partitions."""
+
 
 from pathlib import Path
 import sys
@@ -10,21 +10,11 @@ if str(THIS_DIR) not in sys.path:
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-import combinatorial
 import lexicographic
 import integer_partitions.values as values
 import lex_order
 
-def run():
-    print("Smoke test for integer_partitions")
-    try:
-        print("combinatorial:", combinatorial.combinatorial_info())
-    except Exception as e:
-        print("combinatorial import error:", e)
-    try:
-        print("lexicographic:", lexicographic.lexicographic_info())
-    except Exception as e:
-        print("lexicographic import error:", e)
+
 
 
 

@@ -1,18 +1,7 @@
-# Auto-generated placeholder
-"""lexicographic module (placeholder)
 
-Utilities for lexicographic ordering helpers for unranking algorithms.
-"""
 
 from values import count_ordered_lah_rec as ordered_lah_rec
 
-def lexicographic_info():
-    """Return a short description."""
-    return "lexicographic module placeholder"
-
-
-if __name__ == "__main__":
-    print(lexicographic_info())
 
 def extract(block,dispo):
     ret = []

@@ -1,4 +1,4 @@
-"""Exemple d'utilisation pour integer_partitions."""
+
 import random
 
 from pathlib import Path
