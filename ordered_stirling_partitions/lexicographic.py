@@ -4,7 +4,7 @@
 Utilities for lexicographic ordering helpers for unranking algorithms.
 """
 
-from  .numbers import *
+from  values import *
 
 def lexicographic_info():
     """Return a short description."""
@@ -30,7 +30,6 @@ def permutation_unrank_lex(n, Pos):
 def unrankDicho(n, k, r):
     n0 = n
     Res = []
-    print("commence")
     while k > 1:
         A, acc = blockDicho(n, k, r)
         Res.append(A)
