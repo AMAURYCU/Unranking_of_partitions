@@ -1,4 +1,3 @@
-"""Exemple d'utilisation pour ordered_stirling_partitions."""
 
 import combinatorial, lexicographic, values
 

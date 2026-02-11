@@ -1,8 +1,4 @@
-# Auto-generated placeholder
-"""combinatorial module (placeholder)
 
-Utilities for combinatorial helpers for unranking algorithms.
-"""
 
 
 from pathlib import Path

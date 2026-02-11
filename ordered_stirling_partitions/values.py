@@ -1,18 +1,9 @@
-# Auto-generated placeholder
-"""numbers module (placeholder)
 
-Utilities for numeric helpers for unranking algorithms.
-"""
 import functools
 from math import factorial
 
-def numbers_info():
-    """Return a short description."""
-    return "numbers module placeholder"
 
 
-if __name__ == "__main__":
-    print(numbers_info())
 
 @functools.lru_cache(maxsize=None)
 def s2(n, k):

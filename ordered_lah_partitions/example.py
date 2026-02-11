@@ -1,4 +1,4 @@
-"""Exemple d'utilisation pour ordered_lah_partitions."""
+
 
 import combinatorial, lexicographic, values
 
