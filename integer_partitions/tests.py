@@ -33,6 +33,18 @@ def correction(n,k):
     old = [n*k]
     for r in range(values.count_integer_part(n,k)-1,-1 , -1):
        part = lexicographic.lex_unrank_part_pref(n,k,r)
+       p1 = 1
+       for l in part: 
+           if l< p1 :
+                print("Error at n =", n, "k =", k, "r =", r)
+                print("part =", part, "old =", old)
+                return False
+           p1 = l
+       if sum(part) != n: 
+            print("Error at n =", n, "k =", k, "r =", r)
+            print("part =", part, "old =", old)
+            return False
+
        if not (lex_order.leq_lex_seq(part, old)and  not lex_order.eq_seq(part, old)):
             print("Error at n =", n, "k =", k, "r =", r)
             print("part =", part, "old =", old)
