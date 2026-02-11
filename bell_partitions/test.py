@@ -1,5 +1,3 @@
-
-
 from pathlib import Path
 import sys
 
@@ -41,12 +39,13 @@ def is_well_formed(p,n):
     return len(dispo) == 0
 
 
+
 def correction(n,k, verbose = True):
     p0 = lexicographic.unrankDicho(n,k,0)
-    for r in range(1, values.s2(n,k)):
+    for r in range(1, values.Bs2(n,k)):
         if verbose: 
             if r % 1000 == 0:
-                print("r =", r,"/", values.s2(n,k))
+                print("r =", r,"/", values.Bs2(n,k))
         p = lexicographic.unrankDicho(n,k,r)
         if not is_well_formed(p,n):
             print("Error at n =", n, "k =", k, "r =", r)
