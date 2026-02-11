@@ -58,7 +58,7 @@ def correction(n,k, verbose = True):
                 print("Error at n =", n, "k =", k, "r =", r)
                 print("part =", part)
                 return False
-         if not lex_order.leq_lex_seq(old, part) or lex_order.eq_seq(old, part):
+         if not lex_order.lt_lex_seq(old, part):
                 print("Error at n =", n, "k =", k, "r =", r)
                 print("part =", part, "old =", old)
                 return False

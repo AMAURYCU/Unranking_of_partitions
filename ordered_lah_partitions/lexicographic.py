@@ -4,7 +4,7 @@
 Utilities for lexicographic ordering helpers for unranking algorithms.
 """
 
-from numbers import count_ordered_lah_rec as ordered_lah_rec
+from values import count_ordered_lah_rec as ordered_lah_rec
 
 def lexicographic_info():
     """Return a short description."""

@@ -4,7 +4,7 @@
 Utilities for numeric helpers for unranking algorithms.
 """
 import functools
-
+import math
 def numbers_info():
     """Return a short description."""
     return "numbers module placeholder"
@@ -22,3 +22,5 @@ def count_lah_part(n,k):
         return 0 
     return count_lah_part(n-1,k-1)+(n-1+k)*count_lah_part(n-1,k)
 
+for n in range(1000):
+    print(count_lah_part(n, int(math.sqrt(n))))

@@ -45,7 +45,7 @@ def correction(n,k):
             print("part =", part, "old =", old)
             return False
 
-       if not (lex_order.leq_lex_seq(part, old)and  not lex_order.eq_seq(part, old)):
+       if not (lex_order.lt_lex_seq(part, old)):
             print("Error at n =", n, "k =", k, "r =", r)
             print("part =", part, "old =", old)
             return False
