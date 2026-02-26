@@ -8,5 +8,5 @@ This project is composed of one folder per problem, each containing 5 Python fil
 - `lexicographic.py` contains the unranking algorithm for the lexicographic order as defined in the paper and implemented in the file `lex_order.py`.  
 - `example.py` contains an example of the use of the unranking algorithms for random generation and exhaustive generation of the objects of the problem.  
 - `test.py` contains exhaustive tests of the unranking algorithms for small values of the parameters of the problem.  
-
+- `values.py` contains the counting formulas for the problems. 
 In addition, extra files are provided for other unranking algorithms that are neither in lexicographic order nor in the order induced by the combinatorial interpretation of the counting formula for the problem when it's useful.
