@@ -1,2 +1,0 @@
-Amaury CURIEL
-Abntoine GENITRINI
